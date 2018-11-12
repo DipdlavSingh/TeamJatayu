@@ -1,0 +1,910 @@
+@font-face{
+	font-family: EALogo;
+	src: url("EASPORTS15.ttf");
+}
+
+*{
+	/*font-family: sans-serif;*/
+	margin:0;
+	padding:0;
+	text-decoration: none;
+	font-family: sans-serif;
+}
+
+body{
+	letter-spacing:  0;
+	margin:0;
+	padding:0;
+}
+
+body.scroll{
+	overflow: hidden;
+}
+
+
+
+
+/* --Section- */
+
+section{
+	display:block;
+	margin: 0;
+	height: 100vh;
+	width:100vw;
+}
+
+.moto{
+	position: fixed;
+	z-index: 1;
+	background-color : rgba(0,0,0,1); 
+}
+
+.gallery{
+	z-index: 1;
+	position: absolute;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: 100vw 100vh;
+	background-color: black;
+	top:100vh;
+}
+
+.grid{
+	z-index: 1;
+	position: relative;
+	background-color: rgba(0,0,0,1);
+	top:200vh;	
+}
+
+.footer{
+	position:absolute; 
+	top: 300vh; 
+	height: 100vh;
+	background-color: rgba(16,16,16,1);
+}
+
+
+.pageHead{
+	position: fixed;
+	height: 100vh;
+	background-color : rgba(0,0,0,1); 
+
+}
+
+.roster{
+	z-index: 2;
+	position: absolute;
+	top: 40vh; 
+	background-size: 100% 100%;
+}
+
+.sponsors{
+	background: linear-gradient(rgba(0,0,0,1), orange);
+	top: 100vh; 
+}
+
+
+
+
+/*---Nav---*/
+
+nav{
+	position: fixed;
+	max-height: 12vh;
+	text-align: center;
+	/*left: 11vw;*/
+	top: 0;
+	left: -2vw;
+	padding: 10px 0px;
+	transition: all 1s ease;
+	-webkit-transition: all 0.5s ease;
+	-ms-transition: all 0.5s ease;
+	overflow: visible;
+	z-index: 2;
+}
+
+nav.hidden{
+	transform: translate3d(0,-100%,0);
+}
+
+nav.initial{
+	transform: translateX(200%);
+}
+
+
+
+/*-- Input --*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: rgba(253,174,47,1);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+input[type=submit]:hover {
+    background-color: rgba(253,174,47,0.7);
+}
+
+/* --Headings- */
+
+h1{
+	font-size: 8vh;
+}
+
+.roshead h1{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+.fab h3{
+	padding: 3%;
+	color: orange;
+	height: 55%;
+	width: 57%;
+	font-size: 1.5rem;
+	text-shadow: 2px 2px black, -2px -2px black, -2px 2px black, 2px -2px black;
+	position:absolute;
+	border-radius: 50%;
+	/*background-color: rgba(150,150,150,1);*/
+	top:50%;
+	left:50%;
+	transform: translate3d(-50%,-50%,0);
+	transition: all 1s ;
+}
+.fab:hover h3{
+	transform: translate3d(-50%,-50%,0) rotate(-60deg);
+	/*text-shadow: 1px 1px white, -1px -1px white, -1px 1px white, 1px -1px white;*/
+	color: white;
+
+}
+
+.gridItem .gridItemInner h1{
+	color: rgba(255,255,255,1);
+	text-shadow: 2px 2px rgba(0,0,0,1), -2px -2px rgba(0,0,0,1), -2px 2px rgba(0,0,0,1), 2px -2px rgba(0,0,0,1);
+	position: absolute;
+	font-family: EALogo;
+	font-size: 3vw;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%) rotate(-45deg);
+}
+
+.teamName h2{
+	color: rgba(255,255,255,1);
+}
+
+.compHead h1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	text-shadow: 2px 2px rgba(255,255,255,1), -2px -2px rgba(255,255,255,1), -2px 2px rgba(255,255,255,1), 2px -2px rgba(255,255,255,1);
+	text-align: center;
+	font-family: EALogo;
+	transform: translate(-50%,-50%);
+}
+
+.fcontactInner h1{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	font-size: 2em;
+	font-family: EALogo;
+	text-align: center;
+	vertical-align: center;
+}
+
+.teamEmail h3,.teamAddress h3,.contactInfo h3,.captainInfo h3{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: white;
+	transform: translate(-50%,-50%);
+}
+
+
+/*---Links---*/
+a:hover{
+	text-decoration: none;
+}
+/*a:visited{
+	text-decoration: none;
+	color: inherit;
+}
+*/
+
+
+/* --Lists- */
+
+
+nav ul li{
+	display: inline-block;
+	background-color: rgba(51,51,51,0.6);
+	float: left;
+	padding: 20px 20px;
+	font-size: 2.5vh;
+	font-family: sans-serif;
+}
+nav ul li:first-child{
+	width: 23vh;
+	height: 23vh;
+	overflow: visible;
+	background-image: url("images/logos/team logo.jpg");
+	background-size: 80% 80%;
+	background-repeat: no-repeat;
+	background-color: rgba(51,51,51,0.7);
+	background-position: 50% 90%;
+	transform: translateY(-30%);
+	border-radius: 50%;
+	overflow: hidden;
+}
+nav ul li:last-child{
+	border-bottom-right-radius: 50px;
+	border-top-right-radius: 50px;
+}
+nav ul li:nth-child(2){
+	border-bottom-left-radius: 50px;
+	border-top-left-radius: 50px;
+}
+nav ul li:hover{
+	background-color: rgba(51,51,51,0.9); 
+}
+
+
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.fly-in-text{
+	list-style: none;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	opacity: 1;
+	transform: translateX(-50%) translateY(-50%);
+	color: #fff;
+	transition: all 3s ease;
+	font-family: EALogo;
+	font-size: 4.5em;
+	letter-spacing: 0.2em;
+}
+.hidden{opacity: 0;font-size: 0;}
+
+/*.fly-in-text li{
+	display: inline-block;
+	font-style: Open Sans;
+	font-size: 1.05em;
+	margin-right: 9px;
+	transition: all 3s ease;
+	opacity: 1;
+	color: #fff;
+	font-family: EALogo;
+}*/
+
+.roshead div .fly-in-text {
+	top: 90%;
+	left: 15%;
+}
+
+
+
+
+
+/*.fly-in-text.hidden li:nth-child(2) { transform: translateX(-115vw); }
+.fly-in-text.hidden li:nth-child(3) { transform: translateX(-120vw); }
+.fly-in-text.hidden li:nth-child(4) { transform: translateX(-135vw); }
+.fly-in-text.hidden li:nth-child(5) { transform: translateX(-140vw); }
+.fly-in-text.hidden li:nth-child(6) { transform: translateX(-155vw); }
+.fly-in-text.hidden li:nth-child(7) { transform: translateX(-160vw); }
+.fly-in-text.hidden li:nth-child(8) { transform: translateX(-175vw); }
+.fly-in-text.hidden li:nth-child(9) { transform: translateX(-180vw); }
+.fly-in-text.hidden li:nth-child(10) { transform: translateX(-195vw); }
+.fly-in-text.hidden li:nth-child(11) { transform: translateX(-200vw); }
+.fly-in-text.hidden li:nth-child(12) { transform: translateX(-205vw); }*/
+
+
+
+
+/* --Divs- */
+
+.teamName{
+	position: absolute;
+	top: 60%;
+	right: 10%;
+	z-index: 1;
+}
+
+
+#fullpage{
+	overflow: hidden;
+}
+
+#sliderBox{
+	position: relative;
+	width: 500vw;
+	-webkit-animation: slider 25s infinite;
+	-ms-animation: slider 25s infinite;	
+	animation: slider 25s infinite;
+}
+
+.slantedL{
+	z-index: 1;
+	position: absolute;
+	top:0;
+	left:0;
+	height:100vh;
+	width:100vh;
+	transform-origin: top right;
+	transform: translateX(-100vh) skewX(45deg);
+	background-color: rgba(255,255,255,0.6);
+}
+
+.slantedR{
+	z-index: 1;
+	position: absolute;
+	top:0;
+	right:0;
+	height:100vh;
+	width:100vh;
+	transform-origin: top right;
+	transform: skewX(45deg);
+	background-color: rgba(255,255,255,0.6);
+}
+
+.gridItem{
+	margin: 1vh 0 1vh 0;
+	width: 34vh;
+	height: 34vh;
+	position: absolute;
+	display: inline-block;
+	background-size: auto 150%;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	transform: rotate(45deg);
+	/*border-top-right-radius: 15%;
+	border-bottom-left-radius: 15%;*/
+	/*filter: blur(3px); */
+	overflow: hidden;
+}
+#one{
+	background-image: url('images/tabs/About Us.JPG');
+	/*width: 38vw;*/
+	/*left: 1vw;*/
+	top: 24%;
+	left: 37.5%;	
+	transform: translate(-50%,-50%) rotate(45deg);
+}
+#two{
+	background-image: url('images/tabs/Roster.JPG');
+	top: 24%;
+	left: 62.5%;	
+	transform: translate(-50%,-50%) rotate(45deg);
+	/*width: 39vw;*/
+	/*left: 60vw;*/
+}
+#three{
+	background-image: url('images/tabs/Sponsors.JPG');
+	top: 50%;
+	left: 75%;	
+	transform: translate(-50%,-50%) rotate(45deg);
+	/*width: 28vw;*/
+	/*margin-top: 1vh; 
+	top:50%; 
+	left: 1vw;*/
+}
+#four{
+	background-image: url('images/tabs/Competitions.jpg');
+	/*width: 29vw;*/
+	top: 50%;
+	left: 25%;	
+	transform: translate(-50%,-50%) rotate(45deg);
+	/*margin-top: 1vh; 
+	top:50%; 
+	left: 70%;*/
+}
+#five{
+	/*background-transform: rotate(-45deg);*/
+	background-image: url('images/tabs/Cars.jpg');
+	top: 50%;
+	left: 50%;	
+	transform: translate(-50%,-50%) rotate(45deg);
+	/*height: 48vh; */
+	/*width: 19vw; */
+}
+#six{
+	background-image: url('images/tabs/Achievements.JPG');
+	/*width: 39vw;*/
+	top: 76%;
+	left: 37.5%;
+	transform: translate(-50%,-50%) rotate(45deg);
+	margin-top: 1vh; 
+/*	top:50%; 
+	left: 30vw;*/
+}
+#seven{
+	background-image: url('images/tabs/Achievements.JPG');
+	/*width: 39vw;*/
+	top: 76%;
+	left: 62.5%;
+	transform: translate(-50%,-50%) rotate(45deg);
+	margin-top: 1vh; 
+}
+
+.gridItemInner{
+	height: inherit;
+	width: inherit;
+	text-align: center;
+	transition: background-color 1s;
+}
+#onei{
+	background-color:rgba(253,174,47,0.5); 
+}
+#onei:hover{
+	background-color:rgba(253,174,47,0);
+}
+#twoi{
+	background-color:rgba(253,174,47,0.5);
+}
+#twoi:hover{
+	background-color:rgba(253,174,47,0);
+}
+#threei{
+	background-color:rgba(0,0,0,0.5);
+}
+#fouri{
+	background-color:rgba(0,0,0,0.5);
+}
+#threei:hover,#fouri:hover{
+ 	background-color:rgba(0,0,0,0); 	
+}
+#fivei{
+	background-color:rgba(0,0,0,0.5);
+}
+#fivei:hover{
+	background-color:rgba(0,0,0,0);
+}
+#sixi{
+	background-color:rgba(253,174,47,0.5);
+}
+#sixi:hover{
+	background-color:rgba(253,174,47,0);
+}
+#seveni{
+	background-color:rgba(253,174,47,0.5);
+}
+#seveni:hover{
+	background-color:rgba(253,174,47,0);
+}
+
+
+.fab{
+	position: fixed;
+	bottom: 2vh;
+	left: 1vw;
+	width: 15vh;
+	height: 15vh;
+	background: url("images/gear2.png");
+	background-size: 100% 100%;
+	/*border-radius: 50%;*/
+	z-index: 2;
+	transition: all 1s ;
+}
+.fabhide{
+	transform: translateY(200%);
+}
+.fab:hover{
+	transform: rotate(60deg);
+}
+
+.mid{
+	padding:1%;
+	position: relative ;
+	top: -20%;
+	left: 70vw;
+	width: 25vw;
+	height: 50vh;
+	border-top-right-radius: 15%;
+	border-bottom-left-radius: 15%;
+	background-color : rgba(200,200,200,1);
+	box-shadow: 1vh 1vh rgba(0,0,0,0.6);
+	z-index: 2;
+}
+
+.innerRoster{
+	overflow:hidden;
+	width: 100%;
+	position: absolute; 
+	height:100%; 
+	background-color: rgba(0,0,0,0.5);
+}
+
+/*.sponsor{
+	background-repeat: no-repeat; 
+	 background-size: 100% 100%;
+}*/
+.sponsor:hover{
+	width: 40vh;
+	height: 40vh;
+	border-radius: 10%;
+	z-index: 2;
+}
+.sponsor:nth-child(1){top: 10%;background: url('images/member.jpg'); background-size: 100% 100%;}
+.sponsor:nth-child(2){top: 50%;background: url('images/member.jpg'); background-size: 100% 100%;}
+.sponsor:nth-child(3){top: 70%;left:60%;background: url('images/member.jpg'); background-size: 100% 100%;}
+.sponsor:nth-child(4){top: 20%;left:30%;background: url('images/member.jpg'); background-size: 100% 100%;}
+.sponsor:nth-child(5){top: 10%;left:70%;background: url('images/member.jpg'); background-size: 100% 100%;}
+.sponsor:nth-child(6){top: 40%;left:50%;background: url('images/member.jpg'); background-size: 100% 100%;}
+.sponsor:nth-child(7){top: 35%;left:80%;background: url('images/member.jpg'); background-size: 100% 100%;}
+.sponsor:nth-child(8){top: 60%;left:30%;background: url('images/member.jpg');  background-size: 100% 100%;}
+.sponsor:nth-child(9){}
+
+.teamHead{
+	width: 25vh;
+	height: 25vh;
+	display: inline-block;
+	background-color: rgba(40,40,40,1);
+	border-radius: 50%;
+	position: absolute;
+	z-index: 1;
+	top: 20%;
+	left:10%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+	transition: all 1s ease;
+}
+
+
+.teamMember{
+	width: 20vh;
+	height: 20vh;
+	display: inline-block;
+	background-color: rgba(40,40,40,1);
+	border-radius: 50%;
+	position: absolute;
+	top: 60%;
+	left:10%;
+	overflow: hidden;
+	transition: all 2s ease;
+}
+.firstMember{
+	 left:10%; 
+	 background-repeat: no-repeat; 
+}
+.secondMember{
+	 left:40%; 
+	 background-repeat: no-repeat; 
+}
+.thirdMember{
+	 left:70%; 
+	 background-repeat: no-repeat; 
+}
+.init{
+	left: 10%;
+	top: 20%;
+}
+
+.memberDesc{
+	width: inherit;
+	height: 35%;
+	background-color: rgba(20,20,20,0.4);
+	position: relative;
+	top: 70%;
+}
+
+.sponsorDesc{
+	width: inherit;
+	height: inherit;
+	background-color: rgba(20,20,20,0);
+	position: relative;
+	opacity: 0;
+}
+.sponsorDesc:hover{
+	background-color: rgba(20,20,20,0.4);
+	opacity: 1;
+}
+
+
+.compBG{
+	position: absolute;
+	top: 7.5%;
+	/*left: 5%;*/
+	height:85%;
+	width:100%;
+	z-index: 1;
+	background-color: rgba(255,255,255,0.6);
+	overflow: hidden;
+}
+
+.compBtn{
+	height: 10vh;
+	width: 70vw;
+	position: absolute;
+	left: 60%;
+	bottom: 10%;
+	background-color: rgb(10,226,127);
+	z-index: 1;
+	transition: all 1s;
+}
+.compBtn:before{
+	content: '';
+  	position: absolute;
+  	right: 0;
+  	top: 0;
+  	width: 100%;
+  	height: 100%;
+  	transform: skewX(45deg);
+  	transform-origin: bottom left;
+  	background-color: rgb(10,226,127);
+  	z-index: 0;
+}
+.compBtn:hover{
+	transform: translateX(-40%);
+}
+
+.compHead{
+	width: 100%;
+	height: 20%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-image: linear-gradient(rgba(0,0,0,1),rgba(253,174,47,0.7));
+	/*background-image: linear-gradient(rgba(255,255,255,0.7),rgba(150,150,150,0.7));*/
+	/*background-color: rgba(0,0,0,0.7);*/
+	transition: all 1s ease;
+	z-index: 1;
+	/*padding: 2%;*/
+}
+
+.compLogo{
+	width: 60vh;
+	height: 60vh;
+	left: 35%;
+	top: 120px;
+	background-size: 100%;
+	z-index: 0;
+}
+
+
+.compContent{
+	width: 100%;
+	height: 80%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(rgba(253,174,47,0.7),rgba(253,174,47,0.7),rgba(0,0,0,1));
+	/*background-color: rgba(0,0,0,0.7);*/
+	/*background-image: linear-gradient(rgba(150,150,150,0.7),rgba(0,0,0,0.7));*/
+	z-index: 1;
+	background-filter: blur(5px);
+	transition: all 1s ease;
+	overflow: auto;
+}
+
+
+.feedback{
+	height: 80%;
+	width: 45%;
+	padding: 3%;
+	position: absolute;
+	top: 10%;
+	left: 2.5%;
+	background-color: rgba(255,255,255,0.4);
+}
+
+.fcontact{
+	height: 56.25%;
+	width: 45%;
+	position: absolute;
+	top: 10%;
+	left: 52.5%;
+	/*transform: skewX(10deg);*/
+	background-color: rgba(29,33,69,1);
+	overflow: hidden;
+}
+
+.teamEmail{
+	position: absolute;
+	top: 0;
+	height: 20%;
+	width: 100%;
+	border-bottom: 1px solid rgba(0,0,0,1);
+	overflow: hidden;
+}
+
+.teamAddress{
+	position: absolute;
+	top: 20%;
+	height: 40%;
+	width: 100%;
+	border-bottom: 1px solid rgba(0,0,0,1);
+	overflow: hidden;
+}
+
+.contactInfo{
+	position: absolute;
+	top: 60%;
+	height: 40%;
+	width: 100%;
+	overflow: hidden;
+}
+
+/*.captainInfo{
+	position: absolute;
+	top: 70.82%;
+	height: 29.16%;
+	width: 100%;
+	overflow: hidden;
+}*/
+
+.fcontactInner{
+	position: absolute;
+	top: -0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(33,33,33,1);
+	color: rgba(230,230,215,1);
+	transition: all 1s ease;
+	font-family: EALogo;
+}
+
+
+
+/*-- paragraphs --*/
+
+.slantedL h1{
+	font-family: EALogo;
+	float: right ;
+	margin-top: 75%;
+	margin-right: 5%;
+	transform: translateY(-150%) skewX(-45deg);
+}
+
+.slantedR h1{
+	font-family: EALogo;
+	margin-left: 5%;
+	margin-top: 30%;
+	transform: translateY(50%) skewX(-45deg);
+}
+
+.compBtn p{
+	float: left;
+	color: white;
+	position: absolute;
+	left: 10%;
+	transition: all 2s;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.compBtn:hover p{
+	font-size: 2em;
+	left: 50%;
+}
+
+.compContent p{
+	margin: 4%;
+	font-size: 1.3em;
+	text-align: center;
+}
+ 
+
+
+
+/*--IMG--*/
+
+#sliderBox img{
+	width: 100vw;
+	height: 100vh;
+	float: left;
+	display: inline-block;
+}
+
+.bgBlurImg{
+	width:100vw; 
+	height:100vh; 
+	filter:blur(5px);
+}
+
+
+
+/*--ANIMATIONS--*/
+
+@-webkit-keyframes slider{
+	0%{
+		left:0;
+	}
+	16%{
+		left: 0;
+	}
+
+	20%{
+		left:-100vw;
+	}
+	36%{
+		left:-100vw;
+	}
+
+	40%{
+		left:-200vw;
+	}
+	56%{
+		left:-200vw;
+	}
+
+	60%{
+		left:-300vw;
+	}
+	76%{
+		left:-300vw;
+	}
+
+	80%{
+		left:-400vw;
+	}
+	96%{
+		left:-400vw;
+	}
+
+	99%%{
+		left: -500vw;
+	}
+	100%{
+		left:0;
+	}
+
+
+}
+
+
+
+
+
+/*--Table--*/
+table{
+	width: 100vw;
+}
+
+
+
+/*Add on later*/
+
+/*.footer{
+	z-index: -1;
+	position: absolute;
+	height: 60vh;
+	width:100vw;
+	top: 300vh;
+	background-color: rgba(0,0,0,0);
+}
+
+footer{
+	position: fixed;
+	bottom: 0;
+	overflow: hidden;
+}*/
+
+hr{
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	color: white;
+	width: 50%;
+}

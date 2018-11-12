@@ -1,0 +1,7 @@
+-mobile compatibe navbar
+-make angled div straight for mobile
+-moving bg for our sponsors or roster
+
+
+
+-think about gallery pictures

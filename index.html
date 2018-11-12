@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device_width, initial-scale=1">
+	<meta name="author" content="Diplav">
+	<meta name="keywords" value="">
+	
+	<title>Team Jatayu</title>
+	<link rel="icon" type="image/jpg" href="images/logos/team logo.jpg">
+<!-- <link rel="stylesheet" type="text/css" href="footer.css"> -->
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+<!-- <script src="scroll\jquery.fullpage.js"></script> -->
+
+
+<!-- <script>
+	($function(){
+		$(#footer).load("footer.html");
+	});
+</script> -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" type="text/css" href="props.css">
+
+</head>
+
+
+<body >
+
+
+<nav class="initial">
+	<ul>
+		<li><a href="index.html"><div style="height:100%;width:100%;"></div></a></li>
+		<li><a href='#'>About Us</a></li>
+		<li><a href='#'>Gallery</a></li>
+		<li><a href='#'>The Team</a></li>
+		<li><a href='competitions.html'>Competitions</a></li>
+		<li><a href='#' id="contact">Contact Us</a></li>
+		<li><a href='#' "><b>TEAM KALAM</b></a></li>
+	</ul>
+</nav>
+
+
+<a href="#"><div id="fab" class="fab"><h3 align="center" >Join Us</h3></div></a>
+
+
+
+<section class="moto">
+	<div>
+		<h1 align="center " class="fly-in-text hidden">TEAM JATAYU</h1>
+	</div>
+	
+</section>
+
+
+<section class="gallery">
+	<a href="gallery.html"><div class=" slantedL"><h1>Image Gallery</h1></div></a>
+	<a href="#"><div class=" slantedR"><h1>Video Gallery</h1></div></a>
+	<div id="sliderBox" >
+		<img src="images/gs/GS1.JPG">
+		<img src="images/gs/GS2.JPG">
+		<img src="images/gs/GS3.JPG">
+		<img src="images/gs/GS4.jpg">
+		<img src="images/gs/GS5.JPG">
+	</div>
+</section>
+
+
+<section class="grid">
+	<a href="#">
+	<div class="gridItem" id="one" onmouseover="getElem('#one')" >
+		<div class="gridItemInner" id="onei">
+			<h1 >About Us</h1>
+		</div>
+	</div></a>
+
+	<a href="#">
+	<div class="gridItem" id="five" onmouseover="getElem('#five')" >
+		<div class="gridItemInner" id="fivei">
+			<h1>Cars</h1>
+		</div>
+	</div>	
+	</a>
+
+	<a href="#">
+	<div class="gridItem" id="two" onmouseover="getElem('#two')" >
+		<div class="gridItemInner" id="twoi">
+			<h1>Roster</h1>
+		</div>
+	</div>
+	</a>
+
+	<a href="ourSponsors.html">
+	<div class="gridItem" id="three" onmouseover="getElem('#three')" >
+		<div class="gridItemInner" id="threei">
+			<h1>Sponsors</h1>
+		</div>
+	</div>
+	</a>
+
+	<a href="#">
+	<div class="gridItem" id="six" onmouseover="getElem('#six')">
+		<div class="gridItemInner" id="sixi">
+			<h1>Achievements</h1>
+		</div>
+	</div>
+	</a>
+
+	<a href="competitions.html">
+	<div class="gridItem" id="four" onmouseover="getElem('#four')">
+		<div class="gridItemInner" id="fouri">
+			<h1>Competetions</h1>
+			<!-- <hr><p style="position: absolute;top: 55%;left:40%;">bla bla bla</p> -->
+		</div>
+	</div>
+	</a>
+
+</section>
+
+
+<section class="empty" style="z-index: -1;position: absolute;top: 300vh;background-color: rgba(0,0,0,0);">
+	
+</section>
+
+
+<section class="footer">
+
+
+	<div class="feedback">
+		<form>
+			<label>Name</label>
+			<input type="text" placeholder="Your name..">
+			<label>E-mail</label>
+			<input type="text" placeholder="Your E-mail..">
+			<label>Feedback</label>
+			<textarea rows="10" placeholder="Message"></textarea>
+			<input type="submit" >
+		</form>
+	</div>
+
+
+	<div class="fcontact">
+		<div class="teamEmail" onmouseenter="reveal('#fcontactInner','100')" onmouseleave="hide('#fcontactInner')">
+		<h3>teamjatayumait@gmail.com</h3>
+			<div class="fcontactInner" id="fcontactInner">
+				<h1>TEAM  EMAIL</h1>
+			</div>
+		</div>
+		<div class="teamAddress" onmouseenter="reveal('#fcontactInner2','-100')" onmouseleave="hide('#fcontactInner2')">
+		<h3>
+		Auto Lab, M.A.I.T<br>
+		PSP Area, PLOT No.1, <br>
+		Sector 22, Rohini, <br> 
+		New Delhi- 110086</h3>
+			<div class="fcontactInner" id="fcontactInner2" style="background-color: rgba(66,66,66,1);">
+				<h1>TEAM  ADDRESS</h1>
+			</div>
+		</div>
+		<div class="contactInfo" onmouseenter="reveal('#fcontactInner3','100')" onmouseleave="hide('#fcontactInner3')">
+		<h3>
+		Raghvind Chopra  <br>
+		+91 88003 53043<br><br>
+		Rahul Sindhu <br> 
+		+91 90680 56922<br>
+		</h3>
+			<div class="fcontactInner" id="fcontactInner3" style="background-color: rgba(99,99,99,1);">
+				<h1>TEAM  CAPTAINS</h1>
+			</div>
+		</div>
+		<!-- <div class="captainInfo" onmouseenter="reveal('#fcontactInner4','100')" onmouseleave="hide('#fcontactInner4')">
+		<h3>
+		+91 88003 53043<br>
+		+91 90680 56922 <br>
+		</h3>
+			<div class="fcontactInner" id="fcontactInner4" style="background-color: rgba(132,132,132,1);">
+				<h1>CONTACT TEAM</h1>
+			</div>
+		</div> -->
+	</div>
+
+
+	<footer>
+	  <ul>
+	    <li><a href="https://www.instagram.com/teamjatayu/?hl=en"><i class="fa fa-instagram fa-2x" ></i></a></li>
+	    <li><a href="https://www.facebook.com/TeamJatayuMAIT/"><i class="fa fa-facebook-square fa-2x" ></i></a></li>
+	    <li><a href="https://www.youtube.com/channel/UCVoPwvpLRTAT4nn8pgI1u5A"><i class="fa fa-youtube-square fa-2x" ></i></a></li>
+	  </ul>
+	</footer>
+
+</section>
+
+
+<script src="main.js"></script> 
+
+</body>
+
+<!-- <script type="text/javascript">$('#fullpage').fullpage();</script> -->
+</html>
